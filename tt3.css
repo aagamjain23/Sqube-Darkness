@@ -1,0 +1,339 @@
+body
+{
+	background:linear-gradient(to bottom,#1E90FF ,#87CEEB );
+  background-image: url('X:\pro\ice.png'); 
+ overflow: hidden;	
+    margin:0px;
+    padding:0px;    
+  
+	display:flex;
+	justify-content:right;
+	height:100%;
+  width:100%;
+	background-repeat:no-repeat;
+  opacity: 0.9;
+}
+ .slider-btn {
+  
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  outline: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#prevBtn {
+  display: none;
+  left: 0;
+}
+
+#nextBtn {
+  display: none;
+  right: 0;
+}
+
+.slider-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+#homepage {
+  
+  display: none;
+}
+
+#aagam {
+  width: 100%;
+  height: 900px;
+  object-fit: cover;
+}
+
+#companyLogo {
+  position:absolute;
+  top:0%;
+  left:0%;
+  height:100%;
+  width:100%;
+  transition: opacity 2s ease-in-out;
+}
+#grpLogo {
+  display: none;
+  height:100%;
+  width:100%;
+  transition: opacity 2s ease-in-out;
+  position:absolute;
+  top:0%;
+  left:0%;
+  
+}
+#slider {
+  display: none;
+  width: 100%; /* Set the width of your images */
+  overflow: hidden;
+  display: none;
+}
+
+#slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+#startButton{
+	height:100px;
+	width:200px;
+	position:absolute;
+	bottom:295px;
+	right:200px;
+	font-family:Arial Black;
+	border-radius:10%;
+	background-color:black;
+	color:white;
+	border:white 2px solid;
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+	font-size:30px;
+	
+}
+
+#link{
+	text-decoration:none;
+	color:white;
+	
+}
+#play{
+	filter: drop-shadow(0px 0px 5px #ffffff) invert(0);
+}
+#level{
+  display: none;
+	height:100px;
+	width:200px;
+	position:absolute;
+	bottom:155px;
+	right:200px;
+	font-family:Arial Black; 
+	font-size:20px;
+	border-radius:10%;
+	font-size:30px;
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+}
+#sqube{
+	font-size:120px;
+	position:absolute;
+	top:30px;
+	right:275px;
+	font-family:Franklin Gothic Heavy;
+}
+#darkness{
+	font-size:145px;
+	position:absolute;
+	top:130px;
+	right:70px;
+	font-family:Arial Black;
+	-webkit-text-stroke:4px #000;
+	color:transparent;
+	background:linear-gradient(to right,#444444,#555555,#DEDEDE,#F2F3F2 );
+	-webkit-text-fill-color:transparent;
+  background-clip: text; /* Use this property without the -webkit prefix */
+  color: transparent;
+}
+
+#main{
+  position: absolute;
+  top:150px;
+  align-items: center;
+  justify-content: center;
+  
+  
+  height: 1200px;
+  width: 1100px;
+ 
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+#title{
+  display: none;
+  position:absolute;
+  top:-100px;
+  left:100px;
+  
+  font-size: 55px;
+  font-family:Arial Black;
+-webkit-text-stroke:2.5px #000;
+color:transparent;
+background:linear-gradient(to right,#444444,#555555,#DEDEDE,#F2F3F2 );
+-webkit-text-fill-color:transparent;
+background-clip: text; /* Use this property without the -webkit prefix */
+color: transparent;
+}
+.level{
+  
+  width:150px;
+  height:150px;
+  background-color: black;
+  margin-right: 20px;
+  color:white;
+  border:solid black 2px;;
+  border-radius: 10px;
+  font-size: 50px;
+  cursor:pointer;
+  box-shadow:0 0 5px white,0 0 25px white;
+}
+.level:hover{
+  box-shadow: 0 0 5px black,
+  0 0 25px black,0 0 50px black,
+  0 0 100px black,0 0 200px black;
+}
+#row1{
+  display: flex;
+  display: none;
+  flex-direction: row;
+  
+  margin-bottom: 50px;
+ 
+}
+#row2{
+  display: flex;
+  display: none;
+  flex-direction: row;
+  
+  margin-bottom: 50px;
+}
+#row3{
+  display: flex;
+  display: none;
+  flex-direction: row;
+  
+}
+#scoreBoard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px; /* Increased font size */
+    font-family: 'Verdana', sans-serif; /* Changed font family */
+    font-weight: bold; /* Made it bold */
+    color: #333;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+#pauseBox ,#winningBox  {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(45deg, #3498db, #e74c3c);
+    padding: 20px;
+    border: 2px solid #333333;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  #gameOverBox {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(45deg, #3498db, #e74c3c);
+    padding: 20px;
+    border: 2px solid #333333;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1000;
+  }
+
+  #gameOverBox p {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  #gameOverBox button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  #gameOverBox button:hover {
+    background-color: #c0392b;
+  }
+
+  #gameOverBox button#homeBtn1 {
+    background-color: #e67e22;
+  }
+
+  #gameOverBox button#homeBtn1:hover {
+    background-color: #d35400;
+  }
+
+  #gameOverBox button#restartBtn1 {
+    background-color: #e74c3c;
+  }
+
+  #gameOverBox button#restartBtn1:hover {
+    background-color: #c0392b;
+  }
+
+  #pauseBox p {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  #pauseBox button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  #pauseBox button:hover {
+    background-color: #27ae60;
+  }
+
+  #pauseBox button#homeBtn {
+    background-color: #e67e22;
+  }
+
+  #pauseBox button#homeBtn:hover {
+    background-color: #d35400;
+  }
+
+  #pauseBox button#restartBtn {
+    background-color: #e74c3c;
+  }
+
+  #pauseBox button#restartBtn:hover {
+    background-color: #c0392b;
+  }

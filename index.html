@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="css/tt3.css" />
+  
+</head>
+<body>
+  
+   <img id="companyLogo" src="X:\pro\grp.png" alt="Company Logo" >
+  <img id="grpLogo" src="X:\pro\code.png" alt="group Logo" > 
+
+ 
+  <div id="slider">
+    <div id="slides">
+      <div class="slide"><img src="X:\pro/ice1.jpg" alt="Slide 1" height=900px width=1600px></div>
+      <div class="slide"><img src="X:\pro/lava1.jpg" alt="Slide 2" height=900px width=1600px></div>
+      <div class="slide"><img src="X:\pro/space.jpg" alt="Slide 3" height=900px width=1600px></div>
+    </div>
+   
+  </div>
+    <div id="main" >
+        <div id="title"><b><u>Select any level</u></b></div>
+    <div id="row1">
+        <button id="l1" class="level"> 1</button>
+        <button id="l2" class="level"> 2</button>
+        <button id="l3" class="level"> 3</button>
+        <button id="l4" class="level"> 4</button>
+    </div>
+    <div id="row2">
+        <button id="l5" class="level"> 5</button>
+        <button id="l6" class="level">6</button>
+        <button id="l7" class="level"> 7</button>
+        <button id="l8" class="level"> 8</button>
+    </div>
+    <div id="row3">
+        <button id="l9" class="level"> 9</button>
+        <button id="l10" class="level"> 10</button>
+        <button id="l11" class="level"> 11</button>
+        <button id="l12" class="level">12</button>
+    </div>
+    </div>
+
+    <button id="prevBtn" class="slider-btn">&#9664;</button>
+    <button id="nextBtn"class="slider-btn">&#9654;</button>  
+
+  <div id="pauseBox">
+    <p>Game Paused</p>
+    <button id="resumeBtn">Resume</button>
+    <button id="homeBtn">Home</button>
+    <button id="restartBtn">Restart</button>
+  </div>
+
+  <div id="winningBox">
+    <p>YOu WON</p>
+    <button id="homeBtn2">Home</button>
+    <button id="restartBtn2">Restart</button>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <div id="gameOverBox">
+    <p>Game Over</p>
+    <p id="gameOverDistance">Distance Covered: 0 units</p>
+    <button id="homeBtn1">Home</button>
+    <button id="restartBtn1">Restart</button>
+  </div>
+
+
+  <div id="scoreBoard">Distance: 0</div>
+
+
+
+  <div id="homepage">
+  <button id="startButton">
+    <div id="run">
+        <a id="link">RUN!</a>
+    </div><div id="play">&#9654 </div>
+</button>
+
+<button id="level">
+    LEVELS<div><i class="fa fa-bar-chart"></i>
+    </div>
+</button>
+<div id="sqube">SQUBE</div>
+<div id="darkness">DARKNESS</div>
+  </div>
+
+<canvas id="my-canvas"  width="2" height="2"> </canvas>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/tt1.js"> </script>
+</body>
+</html>
